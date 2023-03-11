@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { HiMenuAlt3 } from "react-icons/hi";
+import { HiMenuAlt3 ,HiOutlineLogout} from "react-icons/hi";
 import { MdOutlineDashboard } from "react-icons/md";
-import { RiSettings4Line } from "react-icons/ri";
+import { RiSettings4Line,RiProductHuntFill } from "react-icons/ri";
 import { TbReportAnalytics } from "react-icons/tb";
-import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineUser, AiOutlineStock } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -12,11 +12,12 @@ const Home = () => {
     { name: "dashboard", link: "/", icon: MdOutlineDashboard },
     { name: "user", link: "/", icon: AiOutlineUser },
     { name: "messages", link: "/", icon: FiMessageSquare },
-    { name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
-    { name: "File Manager", link: "/", icon: FiFolder },
+    { name: "tables", link: "/", icon: TbReportAnalytics },
+    { name: "product", link: "/", icon: RiProductHuntFill },
     { name: "Cart", link: "/", icon: FiShoppingCart },
-    { name: "Saved", link: "/", icon: AiOutlineHeart, margin: true },
-    { name: "Setting", link: "/", icon: RiSettings4Line },
+    { name: "Stock", link: "/", icon: AiOutlineStock },
+    { name: "Login", link: "/login", icon: HiOutlineLogout },
+    { name: "Logout", link: "/", icon: HiOutlineLogout},
   ];
   const [open, setOpen] = useState(true);
   return (
